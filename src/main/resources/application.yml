@@ -1,0 +1,19 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /sell
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.1.8/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+logging:
+#  file: D:\java\Study_SpringBoot_Demo\log\my.log
+  file:
+    path: D:\java\Study_SpringBoot_Demo\log\
+  pattern:
+    console: "%d - %msg%n"
+  level: debug
