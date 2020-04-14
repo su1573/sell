@@ -12,6 +12,8 @@ spring:
     url: jdbc:mysql://192.168.1.8/sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
+  jackson:
+    default-property-inclusion: non_null  #设置对象返回null的数据不显示
 
 #logging:
 ##  file: D:\java\Study_SpringBoot_Demo\log\my.log
